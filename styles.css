@@ -6,19 +6,22 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* width: 500px; */
+    width: 260px;
     /* height: 500px; */
-    background-color: antiquewhite;
-    /* margin: 10px 450px; */
+    background-color: rgb(29, 29, 28);
+    margin: 50px auto;
     padding: 50px;
+    border-radius: 30px;
 }
 
 .display {
-    
+   /* outline: red 1px solid; */
+   width: 260px; 
+   
 }
 
 .display-box {
-    width: 200px;
+    /* width: 200px; */
     height: 100px;
     margin: 10px;
     background-color: aliceblue;
@@ -30,6 +33,7 @@
     letter-spacing: 3px;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
     
 }
 
@@ -64,4 +68,10 @@
 
 #btnE {
     background-color: rgb(71, 163, 255);
+    flex: 1;
 }
+
+#btnD , #btnA , #btnS ,#btnM {
+    background-color: rgb(255, 182, 46);
+}
+
