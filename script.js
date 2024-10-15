@@ -66,7 +66,7 @@ btnContainer.addEventListener('click', (e) => {
         // when we are at inserting next number
         else if (firstNum !== '' && val !== '') {
             secondNum = val;
-            result = operate(operator, parseFloat(firstNum), parseFloat(secondNum))
+            result = Math.round(operate(operator, parseFloat(firstNum), parseFloat(secondNum)) * 100.0) / 100.0; 
             console.log(result)
             displayBox.textContent = result
 
@@ -81,7 +81,7 @@ equalSign.addEventListener('click', () => {
     secondNum = val
     
     if (firstNum !== "") {
-        result = operate(operator, parseFloat(firstNum), parseFloat(secondNum));
+        result = Math.round(operate(operator, parseFloat(firstNum), parseFloat(secondNum)) * 100.0) / 100.0; 
         displayBox.textContent = result
     }
 
